@@ -11,6 +11,11 @@ int main()
 
     sort(a, a + n); // asending
 
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+
+    cout << endl;
+
     sort(a, a + n, greater<int>()); // descending
 
     for (int i = 0; i < n; i++)
