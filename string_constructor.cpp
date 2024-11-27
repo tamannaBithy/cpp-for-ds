@@ -32,14 +32,14 @@ using namespace std;
 
 //////////////////// range based for loop
 
-// int main()
-// {
-//     string s;
-//     cin >> s;
-//     for (char c : s)
-//     {
-//         cout << s << endl;
-//     }
-//     //// aivabe sudu matro element pawa jay, index pawa jay na. index dorkar hole normal for loop use korte hbe
-//     return 0;
-// }
+int main()
+{
+    string s;
+    cin >> s;
+    for (char c : s)
+    {
+        cout << c << endl;
+    }
+    //// aivabe sudu matro element pawa jay, index pawa jay na. index dorkar hole normal for loop use korte hbe
+    return 0;
+}
