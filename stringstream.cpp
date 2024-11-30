@@ -66,3 +66,7 @@ int main()
 
     cout << count << endl;
 }
+
+///// input
+// Sanju Samson shamanta samson jessica Bhatta Asif John takla john abraham john baby Shark tank
+// john
