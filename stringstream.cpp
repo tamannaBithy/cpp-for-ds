@@ -22,21 +22,47 @@ using namespace std;
 
 //////// recursive way te ba ulta side theke word gula print korar jonno
 
-void print_recursive(stringstream &ss)
-{
-    string word;
-    if (ss >> word)
-    {
-        print_recursive(ss);
-        cout << word << endl;
-    }
-}
+// void print_recursive(stringstream &ss)
+// {
+//     string word;
+//     if (ss >> word)
+//     {
+//         print_recursive(ss);
+//         cout << word << endl;
+//     }
+// }
+
+// int main()
+// {
+//     string s;
+//     getline(cin, s);
+//     stringstream ss(s);
+//     print_recursive(ss);
+//     return 0;
+// }
+
+////////////////////// counting how many time "jhon" appeared in a string
 
 int main()
 {
     string s;
     getline(cin, s);
+    string expected;
+    cin >> expected;
+
     stringstream ss(s);
-    print_recursive(ss);
-    return 0;
+
+    string word;
+    int count = 0;
+
+    while (ss >> word)
+    {
+
+        if (word == expected)
+        {
+            count++;
+        }
+    }
+
+    cout << count << endl;
 }
